@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Cars data visualizer">
+  <meta name="keywords" content="HTML,CSS,D3,JavaScript">
+  <meta name="author" content="Shubham Rathore">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" id="https://www.w3schools.com/w3css/4/w3.css"> 
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://d3js.org/queue.v1.min.js"></script>
+  <script src="https://d3js.org/topojson.v1.min.js"></script>
+  <script src = "https://d3js.org/d3.v4.min.js"></script>
+  <script src="http://labratrevenge.com/d3-tip/javascripts/d3.tip.v0.6.3.js"></script>
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+  <script src="https://d3js.org/d3-array.v2.min.js"></script>
+  
+  <script src="{{url_for('static', filename='d3-tip.js')}}"></script>
+  <script src="{{url_for('static', filename='area_chart.js')}}"></script>
+
+  <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='main.css') }}">
+ 
+</head>
+
+<body>
+  <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1" />
+  
+  <div id = "div1"></div>
+
+  <div id = "div2"></div>
+
+
+  <div id = "div3"></div>
+
+  <div id = "div4"></div>
+
+
+  <script src="{{url_for('static', filename='index.js')}}"></script>
+</body>
